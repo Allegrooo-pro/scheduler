@@ -1,0 +1,27 @@
+.card{
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 20px 30px rgba(0,0,0,.4);
+
+}
+
+::-webkit-scrollbar{
+
+width:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#06b6d4;
+
+border-radius:20px;
+
+}
