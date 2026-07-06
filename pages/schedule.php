@@ -937,22 +937,6 @@ DAFTAR AGENDA
 
     </div>
 
-<!-- =====================================================
-STATISTIK AGENDA
-===================================================== -->
-
-<div class="card mt-8">
-
-    <h2 class="title text-3xl mb-6">
-
-        📊 Statistik Agenda
-
-    </h2>
-
-    <canvas id="chartAgenda" height="120"></canvas>
-
-</div>
-
 </div>
 
 <!-- =====================================================
@@ -971,7 +955,9 @@ STATISTIK
 
         </h2>
 
-        <canvas id="chartAgenda" height="260"></canvas>
+        <div style="max-height:260px; position:relative;">
+        <canvas id="chartAgenda"></canvas>
+        </div>
 
     </div>
 
@@ -1358,9 +1344,16 @@ options:{
 
 responsive:true,
 
+maintainAspectRatio:true,
+
 plugins:{
 
-legend:{labels:{color:"white"}}
+legend:{
+labels:{
+color:"white",
+font:{size:13}
+}
+}
 
 }
 
